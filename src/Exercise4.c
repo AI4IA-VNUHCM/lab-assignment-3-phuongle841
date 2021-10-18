@@ -14,6 +14,31 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
+	int Middle;
+	for (int i = 0; i < n; i++)//increase
+	{
+		if (arr[i]>arr[i+1])
+		{
+			Middle=0;
+			return Middle;
+		}
+		else
+		{Middle=1;}
+		
+	}
+	for (int i = 0; i < n; i++)//decrease
+	{
+	 if(arr[i]<arr[i+1]) 
+		{
+			Middle=0;
+			return Middle;
+		}
+		else
+		{Middle=-1;}
+		
+	}
+	
+	return Middle;
 	
 }
 
@@ -29,3 +54,5 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+//gcc .\src\Exercise4.c -o .\bin\ex4.exe
+//.\bin\\ex4.exe  8 7 9 2 1 5 2
